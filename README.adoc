@@ -1,0 +1,34 @@
+= Yalc Sample
+
+Very simple project used to test Yalc
+
+== Build the library
+
+In the folder `packages/lib`:
+
+- `cd packages/lib`
+- `npm install`
+- `npm run build`
+- `npm run type-declaration`
+
+You can check that the result is in the repositry `packages/lib/dist` with the following files:
+
+- `index.d.ts`
+- `lib.es.js`
+- `lib.umd.js`
+
+== Publish the library locally using Yalc
+
+In the folder `packages/lib`:
+
+- `yalc publish`
+
+== Build the application using Yalc
+
+In the folder `packages/app`:
+
+- `yalc add lib`
+- `npm install`
+- `npm start`
+
+And you can now see your library in action!
